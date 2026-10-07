@@ -125,7 +125,7 @@ const AboutContent = ({ dark }) => {
       {/* Header */}
       <div className="flex items-center gap-4">
         <img
-          src="/img1.jpeg"
+          src="/myimage.jpg"
           alt={PROFILE.name}
           className="w-16 h-16 rounded-full object-cover flex-shrink-0"
           style={{ boxShadow: "0 0 0 2px rgba(255,255,255,0.15)" }}
@@ -574,11 +574,11 @@ const MobileLayout = ({ dark, setDark }) => {
     >
       {/* Wallpaper */}
       <img
-        src="/img1.jpeg"
+        src="/myimage.jpg"
         alt=""
         aria-hidden="true"
         className="fixed inset-0 w-full h-full pointer-events-none"
-        style={{ objectFit: "cover", objectPosition: "center center", opacity: dark ? 0.25 : 0.35 }}
+        style={{ objectFit: "cover", objectPosition: "center 20%", opacity: dark ? 0.25 : 0.35 }}
       />
 
       {/* Status bar */}
@@ -772,13 +772,13 @@ export default function MacOSPortfolio() {
     >
       {/* Wallpaper */}
       <img
-        src="/img1.jpeg"
+        src="/myimage.jpg"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 w-full h-full pointer-events-none"
         style={{
           objectFit: "cover",
-          objectPosition: "center center",
+          objectPosition: "center 20%",
           opacity: dark ? 0.28 : 0.38,
         }}
       />
