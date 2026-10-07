@@ -573,9 +573,12 @@ const MobileLayout = ({ dark, setDark }) => {
       }}
     >
       {/* Wallpaper */}
-      <div
-        className="fixed inset-0"
-        style={{ backgroundImage: "url('/img1.jpeg')", backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat", opacity: dark ? 0.25 : 0.35 }}
+      <img
+        src="/img1.jpeg"
+        alt=""
+        aria-hidden="true"
+        className="fixed inset-0 w-full h-full pointer-events-none"
+        style={{ objectFit: "cover", objectPosition: "center center", opacity: dark ? 0.25 : 0.35 }}
       />
 
       {/* Status bar */}
@@ -768,13 +771,14 @@ export default function MacOSPortfolio() {
       }}
     >
       {/* Wallpaper */}
-      <div
-        className="absolute inset-0"
+      <img
+        src="/img1.jpeg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full pointer-events-none"
         style={{
-          backgroundImage: "url('/img1.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
+          objectFit: "cover",
+          objectPosition: "center center",
           opacity: dark ? 0.28 : 0.38,
         }}
       />
